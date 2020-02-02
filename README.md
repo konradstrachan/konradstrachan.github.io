@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/konradstrachan/konradstrachan.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+About
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Languages I am experienced with
 
-### Markdown
+| ![c++](img/cpp.png) | ![Golang](img/golang.png) | ![JavaScript](img/js.png) | ![NodeJS](img/nodejs.png) | ![Python](img/python.png) |
+|:--:|:--:|:--:|:--:|:--:|:--:|
+| C++ <br/>Standards 11/14/17/2x | Golang | JavaScript | NodeJS | Python |
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Platforms I have developed for
 
-```markdown
-Syntax highlighted code block
+| ![Windows](img/win.png) | ![Linux](img/linux.png) | ![low level](img/chip.png) | ![Smartwatches](img/watch.png) | ![Python](img/python.png) |
+|:--:|:--:|:--:|:--:|:--:|:--:|
+| GUI using Win32 and MFC<br/>Windows Services<br/>User authentication<br/>Terminal Services<br/>Text to Speech APIs<br/>Low level integrations | High performance Services<br/>Distributed microservice architecture | S.M.A.R.T. (Self-Monitoring, Analysis and Reporting Technology) integration<br/>Binary protocol and file format design and implementation<br/>Low level protocol analysis<br/>Arduino based hardware interfacing<br/>Microcontroller based hardware interfacing | Pebble and Fitbit smartwatches<br/>Watchface and app development | REST endpoint development and scraping<br/>WebSocket endpoint and integrations<br/>Web front end development |
 
-# Header 1
-## Header 2
-### Header 3
+* Windows - GUI and services and low level development
+* Linux - services development
+* Low level hardware - S.M.A.R.T., Arduino and microcontrollers
+* Wearable computing devices : Pebble and Fitbit smartwatches
+* Web front end development
 
-- Bulleted
-- List
+Technologies I am familiar with
+* REST, Websocket and general web technologies
+* Multithreaded, asynchronous processing and low latency development
+* Blockchain and Cryptocurrencies
+* Elektron APIs for Refinitiv integrations (Thomson Reuters)
+* Boost library (ASIO)
+* FIX protocol
+* Distributed, decentralized high performance messaging (NSQ)
 
-1. Numbered
-2. List
+Products and projects I have worked on professionally
+* Gissing / Thomson Reuters ConteX 4 and ConteX Solo
+* TeamVewer 10-13 Windows and Linux clients
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/konradstrachan/konradstrachan.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Selected open source projects
+* High performance matching engine written in C++17 (https://github.com/konradstrachan/MatchingEngine)
+* Experimental console framebuffer output written ub C++17 (https://github.com/konradstrachan/ConsoleExperiments)
+* Popular Pebble smartwatch watchface written in C and Javascript (https://github.com/konradstrachan/Pebble_ActivityWatchFace)
+* Simple Windows tool to switch between Cryptocurrency miners based on profitibility written in C++14 (https://github.com/konradstrachan/miningswitcher)
+* Simple isometric game for Pebble smartwatches written in C (https://github.com/konradstrachan/Pebble_HopperGame)
