@@ -4,11 +4,15 @@ I'm *Konrad Strachan* and I have been writing code since I was 7 years old.
 
 Back then waiting several minutes for a game to load from a tape cassette on my [Amstrad CPC 464](http://www.computinghistory.org.uk/det/2805/Amstrad-CPC-464/) felt like an eternity and I opted instead to pick up the programming user guide that came with the machine to see how I could create my own programs (without waiting).
 
+![About me - flying](img/aboutmetalking.png)
+
 This early curiosity sparked my passion for software development and technology in general. 
 
 I love solving problems, collaborating, leading teams and writing code, especially using *modern C++* and *Golang*.
 
 In my career thus far I have worked for a global provider of financial markets data, a Cryptocurrency market data firm as well as the leading supplier of remote control and security software. Further information about my professional experience over the last 10+ years can be found on my [LinkedIn](https://www.linkedin.com/in/konrad-strachan/).
+
+![About me - flying](img/aboutmeflying.png)
 
 When I'm not writing code I like to be up in the sky flying light aircraft like Piper PA-28s or Grumman AA-5Bs.
 
