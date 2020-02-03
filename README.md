@@ -10,7 +10,7 @@ This early curiosity sparked my passion for software development and technology 
 
 I love solving problems, collaborating, leading teams and writing code, especially using *modern C++* and *Golang*.
 
-In my career thus far I have worked for a global provider of financial markets data, a Cryptocurrency market data firm as well as the leading supplier of remote control and security software. Further information about my professional experience over the last 10+ years can be found on my [LinkedIn](https://www.linkedin.com/in/konrad-strachan/).
+In my career thus far I have worked for a global provider of financial markets data, a Cryptocurrency market data firm as well as the leading supplier of remote control and security software. Further information about my professional experience over the last 10+ years can be found on my [LinkedIn](https://www.linkedin.com/in/konrad-strachan/). My [CV](KonradStrachanCV2020.pdf) is also available.
 
 ![About me - flying](img/aboutmeflying.png)
 
@@ -20,13 +20,13 @@ When I'm not writing code I like to be up in the sky flying light aircraft like 
 
 ![C++](img/cpp.png)  ![Golang](img/golang.png)  ![JavaScript](img/js.png)  ![NodeJS](img/nodejs.png)  ![Python](img/python.png)
 
-* I have a strong passion for **Modern C++ (11/14/17)** and have spent a large number of years contributing to professional and hobby code bases
+* I have a strong passion for **Modern C++ (11/14/17)** and have spent a more than 10 years contributing to professional and hobby code bases
 
-* **Golang** is a more recent interest of mine, having only used it professionally for about 6 months now. In that time it has won me over allowing for rapid development and solving of problems whilst retaining the power and performance of a strong statically typed compiled lanugage
+* **Golang** is a more recent interest of mine, having only used it professionally for about a year now. In that time it has won me over allowing for rapid development and solving of problems whilst retaining the power and performance of a strong statically typed compiled lanugage
 
 * **JavaScript** is a wonderfully flexible language that I have used over many years both on the front end and more recently on the backend with the wonderful **NodeJS**
 
-* Lastly but by no means leastly I have used **Python** extensively over the last ten years for everything from scripting to microservice deployment
+* Lastly but by no means leastly I have used **Python** extensively over the last 10 years for everything from scripting to microservice deployment
 
 ## Platforms I have developed for
 
