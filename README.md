@@ -1,4 +1,4 @@
-# whoami
+## whoami
 
 I'm *Konrad Strachan* and I have been writing code since I was 7 years old.
 
@@ -8,7 +8,7 @@ This early curiosity and exposure to programming sparked my passion for software
 
 Fast forward to today, and I would describe myself as someone who loves solving problems, collaborating with others, is comfortable leading teams as well and writing code in a variety of languages. The majority of my career thus far has been spent writing *modern C++* and whilst *Golang* is a relatively recent addition to my skillset it is (with C++) one of my preferred languages to develop in.
 
-I am firmly of the belief that the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and believe the real skill in software development is condensing complex logical constructs into cleanly designed, self documenting and easily maintainable code.
+I am a firm advocate of the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and believe the real skill in software development is condensing complex logical constructs into cleanly designed, self documenting and easily maintainable code.
 
 Aside from writing code, I love talking about problems I've solved, sharing knowledge and presenting information. Teaching others is often the best way to master a subject yourself.
 
