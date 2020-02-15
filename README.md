@@ -1,3 +1,5 @@
+[![LinkedIn](img/icon_linkedin.png)](https://www.linkedin.com/in/konrad-strachan/) [![Email](img/icon_email.png)](mailto:konrad.strachan@gmail.com)
+
 ## whoami
 
 I'm *Konrad Strachan* and I have been writing code since I was 7 years old.
@@ -5,6 +7,8 @@ I'm *Konrad Strachan* and I have been writing code since I was 7 years old.
 Back then waiting **several minutes** for a game to load from a tape cassette on my [Amstrad CPC 464](http://www.computinghistory.org.uk/det/2805/Amstrad-CPC-464/) felt like an eternity and I opted instead to pick up the [thick and colourful programming guide](https://lh3.googleusercontent.com/proxy/Oh-u9qjVUXRu4JTeeWaQ1TLn8pF71VymXqLiasxwowI6KLrJTwhjuKIgy_ogEqV4cxaPnWew5mKeXgSiaMuaUWdGlwNGgb5bORVvYw) that came with the machine to see how I could create my own programs (without waiting). It was a time before the Internet, when computer magazines were replete with [code listings](https://arstechnica.com/staff/2018/11/first-encounter-compute-magazine-and-its-glorious-tedious-type-in-code/) enterprising readers could tediously type in to their machines.
 
 This early curiosity and exposure to programming sparked my passion for software development and technology in general which continues to this day.
+
+![About me - flying](img/aboutmetalking2.png)
 
 Fast forward to today, and I would describe myself as someone who loves solving problems, collaborating with others, is comfortable leading teams as well and writing code in a variety of languages. The majority of my career thus far has been spent writing *modern C++* and whilst *Golang* is a relatively recent addition to my skillset it is (with C++) one of my preferred languages to develop in.
 
