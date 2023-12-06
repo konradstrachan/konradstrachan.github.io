@@ -2,6 +2,8 @@
 
 ## whoami
 
+<img style="float:right" src="https://github.com/konradstrachan/konradstrachan.github.io/assets/21056525/1bac6cbc-bdb3-48fe-a574-93496007fee2" />
+
 Greetings! I'm *Konrad Strachan*, a seasoned technologist, developer and CTO with a lifelong passion for coding, problem-solving, and team building. I wrote my first code at 7 years old and have never stopped building, iterating, hacking and pushing the boundaries of what's possible.
 
 I'm driven by an insatiable curiosity and an appetite for solving complex real world problems.
