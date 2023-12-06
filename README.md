@@ -2,11 +2,11 @@
 
 ## whoami
 
-<img align="right" src="[https://picsum.photos/100/100](https://github.com/konradstrachan/konradstrachan.github.io/assets/21056525/1bac6cbc-bdb3-48fe-a574-93496007fee2)">
-
 Greetings! I'm *Konrad Strachan*, a seasoned technologist, developer and CTO with a lifelong passion for coding, problem-solving, and team building. I wrote my first code at 7 years old and have never stopped building, iterating, hacking and pushing the boundaries of what's possible.
 
 I'm driven by an insatiable curiosity and an appetite for solving complex real world problems.
+
+<img align="right" width="280px" src="https://github.com/konradstrachan/konradstrachan.github.io/assets/21056525/1bac6cbc-bdb3-48fe-a574-93496007fee2">
 
 In my recent career I have served as CTO for a number of years at Rhinofi (formerly DeversiFi), navigating several shifts within web3 over the previous market cycles. During this time I built the high performance matching engine and execution infrastructure that to date processed > $1.5 Billion USD in volume without issue and powered the first production ready Layer 2 rollup DEX back in 2020. Utilising modular liquidity sources to underpin the markets (one of which was the first AMM to blend price curves with quantised orderbook liquidity dynamically), the matching engine allowed users to have the same trading experience they'd experience on a centralise exchange in terms of speed, liquidity and convenience but with the added benefits of decentralisation, self-custody and trustlessness.
 
