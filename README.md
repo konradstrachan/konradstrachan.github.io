@@ -12,7 +12,22 @@ I am a firm advocate of the [KISS principle](https://en.wikipedia.org/wiki/KISS_
 
 Whenever possible I attend tech and web3 events around the world to collaborate with thought leaders to share knowledge and insights on decentralization, self-sovereignty, and trustlessness along with driving discussions around the future of solver based execution services. I love talking about problems I've solved, sharing knowledge and presenting information.
 
-## Selected open source projects
+## Things I have built have run on
+
+I've built projects, tools and apps that run on everything from blockchains, high performance servers to embedded low power devices and games consoles. If I have something, it's likely I've at least tried to modify and write some code for it..
+
+![Win](img/dev_windows.png)
+![Linux](img/dev_linux.png)
+![Servers](img/dev_servers.png)
+![SBC](img/dev_sbc.png)
+![ETH](img/dev_ethereum.png)
+![N64](img/dev_n64.png)
+![Pebble](img/dev_pebble.png)
+![CPC464](img/dev_cpc464.png)
+![FITBIT](img/dev_fitbit.png)
+![Pebble](img/dev_pebble.png)
+
+## Selected open source / hackathon projects
 
 * RFQ style marketplace for [bridging using intents](https://github.com/konradstrachan/ethistanbulhackathon2023) with Solvers who are incentivised through fees to provide a bridging service
 * Adding [event driven](https://github.com/konradstrachan/ethparishackathon23) possibilities to EVM smart contract development through trustless callbacks leveraging incentivised execution
@@ -20,7 +35,7 @@ Whenever possible I attend tech and web3 events around the world to collaborate 
 * AI guided [auditing of smart contracts](https://github.com/konradstrachan/ethpraguehackathon23) built using Solidity and Python using openAI storing audit results verifiably on the blockchain
 * Popular Pebble [smartwatch watchface called AcitivityFace](https://github.com/konradstrachan/Pebble_ActivityWatchFace) written in C and Javascript
 * High performance spot market matching engine written in C++17 [MatchingEngine](https://github.com/konradstrachan/MatchingEngine)
-Lockless queuing for inter-thread orchestration prototype
+* Lockless queuing for [inter-thread orchestration](https://github.com/konradstrachan/workload_cpp) prototype
 * Trustless [multi-token vesting](https://github.com/konradstrachan/ethdamhackathon23) written in Solidity
 * Proof of concept [prediction market platform](https://github.com/konradstrachan/ethlondonhackathon2023) powered by an optimistic oracle built on the Tezos blockchain using SmartPy
 * Algorithmic [stablecoin](https://github.com/konradstrachan/devconnect2023aleohackathon) for ZK chain Aleo written in Leo
@@ -30,4 +45,5 @@ Lockless queuing for inter-thread orchestration prototype
 ## Contact
 
 * [LinkedIn](https://www.linkedin.com/in/konrad-strachan/)
+* [CV](https://github.com/konradstrachan/konradstrachan.github.io/blob/master/Konrad%20Strachan%20CV%202023.pdf)
 * [email](mailto:konrad.strachan@gmail.com)
