@@ -17,15 +17,14 @@ Whenever possible I attend tech and web3 events around the world to collaborate 
 I've built projects, tools and apps that run on everything from blockchains, high performance servers to embedded low power devices and games consoles. If I have something, it's likely I've at least tried to modify and write some code for it..
 
 ![Win](img/dev_windows.png)
-![Linux](img/dev_linux.png)
 ![Servers](img/dev_servers.png)
+![Linux](img/dev_linux.png)
 ![SBC](img/dev_sbc.png)
 ![ETH](img/dev_ethereum.png)
 ![N64](img/dev_n64.png)
 ![Pebble](img/dev_pebble.png)
-![CPC464](img/dev_cpc464.png)
 ![FITBIT](img/dev_fitbit.png)
-![Pebble](img/dev_pebble.png)
+![CPC464](img/dev_cpc464.png)
 
 ## Selected open source / hackathon projects
 
