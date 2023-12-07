@@ -4,11 +4,13 @@ Greetings! I'm *Konrad Strachan*, a seasoned technologist, developer and CTO wit
 
 <img align="right" width="280px" src="https://github.com/konradstrachan/konradstrachan.github.io/assets/21056525/1bac6cbc-bdb3-48fe-a574-93496007fee2">
 
-I'm driven by an insatiable curiosity and an appetite for solving complex real world problems.
+💡 I'm driven by an insatiable curiosity and an appetite for solving complex real world problems.
+
+🚀 I believe in iterating rapidly, failing fast and embuing everything with instrumentation and metrics collection to gain insights which then drive further decision making. A tight cycle of building, measuring, learning (and then repeating with learnings) in my experience has been the strongest indicator of an effective team.
 
 In my recent career I have served as CTO for a number of years at Rhinofi (formerly DeversiFi), navigating several shifts within web3 over the previous market cycles. During this time I built the high performance matching engine and execution infrastructure that to date processed > $1.5 Billion USD in volume without issue and powered the first production ready Layer 2 rollup DEX back in 2020. Utilising modular liquidity sources to underpin the markets (one of which was the first AMM to blend price curves with quantised orderbook liquidity dynamically), the matching engine allowed users to have the same trading experience they'd experience on a centralise exchange in terms of speed, liquidity and convenience but with the added benefits of decentralisation, self-custody and trustlessness.
 
-I am a firm advocate of the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and believe the real test of any skill (whether in architecture, system design or software development etc) is being able to condense complex conceptual or technical elements into clearly articulable forms that easily convey the essense without exteneous complexities.
+🧐 I am a firm advocate of the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and believe the real test of any skill (whether in architecture, system design or software development etc) is being able to condense complex conceptual or technical elements into clearly articulable forms that easily convey the essense without exteneous complexities.
 
 Whenever possible I attend tech and web3 events around the world to collaborate with thought leaders to share knowledge and insights on decentralization, self-sovereignty, and trustlessness along with driving discussions around the future of solver based execution services. I love talking about problems I've solved, sharing knowledge and presenting information.
 
