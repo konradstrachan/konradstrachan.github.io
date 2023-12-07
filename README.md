@@ -35,16 +35,18 @@ I've built projects, tools and apps that run on everything from blockchains, hig
 
 ## Selected open source / hackathon projects
 
-* RFQ style marketplace for [bridging using intents](https://github.com/konradstrachan/ethistanbulhackathon2023) with Solvers who are incentivised through fees to provide a bridging service
-* Adding [event driven](https://github.com/konradstrachan/ethparishackathon23) possibilities to EVM smart contract development through trustless callbacks leveraging incentivised execution
+A collection of personal projects and hackathon submissions I have worked on over the years. Several of the entries below (marked with 🏆) have received awards at various hackathons I have participateed in.
+
+* RFQ style marketplace for [bridging using intents](https://github.com/konradstrachan/ethistanbulhackathon2023) with Solvers who are incentivised through fees to provide a bridging service 🏆
+* Adding [event driven](https://github.com/konradstrachan/ethparishackathon23) possibilities to EVM smart contract development through trustless callbacks leveraging incentivised execution 🏆
 * Twitter bots in web3 [without the trust](https://github.com/konradstrachan/superhackhackathon23) using account abstraction
-* AI guided [auditing of smart contracts](https://github.com/konradstrachan/ethpraguehackathon23) built using Solidity and Python using openAI storing audit results verifiably on the blockchain
+* AI guided [auditing of smart contracts](https://github.com/konradstrachan/ethpraguehackathon23) built using Solidity and Python using openAI storing audit results verifiably on the blockchain 🏆
 * Popular Pebble [smartwatch watchface called AcitivityFace](https://github.com/konradstrachan/Pebble_ActivityWatchFace) written in C and Javascript
 * High performance spot market matching engine written in C++17 [MatchingEngine](https://github.com/konradstrachan/MatchingEngine)
 * Lockless queuing for [inter-thread orchestration](https://github.com/konradstrachan/workload_cpp) prototype
-* Trustless [multi-token vesting](https://github.com/konradstrachan/ethdamhackathon23) written in Solidity
-* Proof of concept [prediction market platform](https://github.com/konradstrachan/ethlondonhackathon2023) powered by an optimistic oracle built on the Tezos blockchain using SmartPy
-* Algorithmic [stablecoin](https://github.com/konradstrachan/devconnect2023aleohackathon) for ZK chain Aleo written in Leo
+* Trustless [multi-token vesting](https://github.com/konradstrachan/ethdamhackathon23) written in Solidity 🏆
+* Proof of concept [prediction market platform](https://github.com/konradstrachan/ethlondonhackathon2023) powered by an optimistic oracle built on the Tezos blockchain using SmartPy 🏆
+* Algorithmic [stablecoin](https://github.com/konradstrachan/devconnect2023aleohackathon) for ZK chain Aleo written in Leo 🏆
 * Simple isometric game called [Hopper](https://github.com/konradstrachan/Pebble_HopperGame) for Pebble smartwatches written in C 
 * Experimental [console framebuffer output](https://github.com/konradstrachan/ConsoleExperiments) written in C++17 
 
