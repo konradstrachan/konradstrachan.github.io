@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Konrad Strachan — neoinfo</title>
+<style>
+  :root{
+    --bg:#0d1017; --panel:#11151d; --border:#232a35; --text:#c8d3e0; --dim:#5f6f85;
+    --cyan:#5cc8ff; --green:#7fd962; --amber:#e8c66a; --magenta:#d386e0; --red:#e06c75;
+    --mono:'JetBrains Mono',ui-monospace,'Cascadia Code',Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:14.5px;line-height:1.65}
+  .wrap{max-width:900px;margin:0 auto;padding:48px 24px 80px}
+  .term{border:1px solid var(--border);border-radius:10px;background:var(--panel);box-shadow:0 24px 80px rgba(0,0,0,.55);overflow:hidden}
+  .bar{display:flex;align-items:center;gap:8px;padding:11px 16px;border-bottom:1px solid var(--border);background:#0c0f16}
+  .dot{width:12px;height:12px;border-radius:50%}
+  .r{background:#ff5f57}.y{background:#febc2e}.g{background:#28c840}
+  .bar span{margin-left:12px;color:var(--dim);font-size:12px}
+  .body{padding:16px 34px 30px}
+  .prompt{color:var(--dim)}
+  .prompt b{color:var(--green);font-weight:600}
+  .prompt::after{content:'❯';color:var(--magenta);margin-left:8px}
+  /* neofetch layout */
+  .fetch{display:flex;gap:40px;margin:22px 0 10px;flex-wrap:wrap}
+  .art{color:var(--cyan);font-size:13px;line-height:1.35;white-space:pre;text-shadow:0 0 14px rgba(92,200,255,.35)}
+  .art .k{color:var(--magenta)}
+  .info{flex:1;min-width:300px}
+  .info .user{color:var(--green);font-weight:700}
+  .info .user span{color:var(--dim);font-weight:400}
+  .hr{color:var(--dim);margin:6px 0;white-space:pre}
+  .row{display:flex;gap:0}
+  .row .key{color:var(--cyan);min-width:110px}
+  .row .val{color:var(--text)}
+  .langs{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+  .langs i{width:22px;height:12px;border-radius:2px;display:inline-block}
+  .pal{display:flex;gap:6px;margin-top:14px}
+  .pal i{width:26px;height:12px;border-radius:2px}
+  /* hero image */
+  .hero-img{display:block;width:160px;height:160px;object-fit:cover;border:1px solid var(--border);border-radius:50%;margin:0;box-shadow:0 12px 40px rgba(0,0,0,.45),0 0 24px rgba(92,200,255,.08)}
+  /* top two-column: philosophy left, pfp right */
+  .top-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 48px;align-items:center;margin-top:6px}
+  .top-right{justify-self:end}
+  /* role cards */
+  .role-card{border:1px solid var(--border);border-radius:10px;background:rgba(255,255,255,.02);padding:20px 24px;margin:14px 0 16px}
+  .role-head{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--border);padding-bottom:12px;margin-bottom:14px}
+  .role-head h3{font-size:16.5px;font-weight:700;color:#e6edf3;letter-spacing:-.01em}
+  .role-head h3 em{font-style:normal;color:var(--dim);font-weight:400;font-size:13px;margin-left:10px}
+  .role-pill{font-size:11.5px;border:1px solid var(--border);border-radius:99px;padding:3px 12px;color:var(--amber);white-space:nowrap}
+  .init{margin-bottom:14px}
+  .init:last-child{margin-bottom:0}
+  .init h4{font-size:13.5px;font-weight:700;color:var(--cyan);margin-bottom:5px}
+  .init h4 span{color:var(--dim);font-weight:400;font-size:12px;margin-left:8px}
+  .init p{font-size:13.5px;margin-bottom:14px;max-width:none}
+  .init p:last-child{margin-bottom:0}
+  .role-card > p{font-size:13.5px;margin-bottom:14px;max-width:none}
+  .role-card > p:last-of-type{margin-bottom:0}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+  .tags span{font-size:11px;border:1px solid var(--border);border-radius:99px;padding:2px 11px;color:var(--dim);background:rgba(255,255,255,.02)}
+  .role-card ul.rlist{list-style:none;margin:14px 0 0;padding:0}
+  .role-card ul.rlist li{font-size:13.5px;padding-left:20px;position:relative;margin-bottom:8px}
+  .role-card ul.rlist li:last-child{margin-bottom:0}
+  .role-card ul.rlist li::before{content:'🔹';position:absolute;left:0;font-size:11px;top:4px}
+  /* product mini-cards */
+  .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:6px}
+  .product{border:1px solid var(--border);border-radius:8px;padding:14px 16px;background:rgba(255,255,255,.02);transition:.15s}
+  .product:hover{border-color:var(--cyan);transform:translateY(-2px)}
+  .product b{display:block;font-size:13.5px;color:var(--cyan);font-weight:700;margin-bottom:4px}
+  .product span{font-size:12.5px;color:var(--dim);line-height:1.55;display:block}
+  /* highlight cards */
+  .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:16px 0 6px}
+  .stat{border:1px solid var(--border);border-radius:8px;padding:16px 18px;background:rgba(255,255,255,.02);transition:.15s}
+  .stat:hover{border-color:var(--green);transform:translateY(-2px)}
+  .stat b{display:block;font-size:24px;font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
+  .stat span{font-size:12.5px;color:var(--dim);line-height:1.5}
+  .stat .sg{color:var(--green)}.stat .sc{color:var(--cyan)}.stat .sa{color:var(--amber)}.stat .sm{color:var(--magenta)}
+  /* sections */
+  h2{color:var(--amber);font-size:15px;margin:36px 0 12px;font-weight:600}
+  .top-grid h2{margin-top:6px}
+  h2::before{content:'❯ ';color:var(--magenta)}
+  p{margin-bottom:14px;max-width:70ch}
+  .hl{color:var(--green)}.hlc{color:var(--cyan)}.hla{color:var(--amber)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin:14px 0}
+  .chip{border:1px solid var(--border);border-radius:6px;padding:8px 12px;font-size:13px;background:rgba(255,255,255,.02);transition:.15s}
+  .chip:hover{border-color:var(--cyan);color:var(--cyan)}
+  .projects{list-style:none;columns:2;column-gap:40px}
+  .projects li{margin-bottom:9px;break-inside:avoid;padding-left:18px;position:relative}
+  .projects li::before{content:'•';position:absolute;left:0;color:var(--magenta)}
+  .projects .tag{color:var(--amber);font-size:12px}
+  a{color:var(--cyan);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .contact{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+  .contact a{border:1px solid var(--border);border-radius:6px;padding:7px 16px;color:var(--text)}
+  .contact a:hover{border-color:var(--green);color:var(--green);text-decoration:none}
+  footer{margin-top:44px;color:var(--dim);font-size:12px;text-align:center}
+  @media(max-width:640px){.projects{columns:1}.top-grid{grid-template-columns:1fr}.top-right{justify-self:start;margin-top:18px}.stats{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:900px) and (min-width:641px){.stats{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="term">
+    <div class="bar"><i class="dot r"></i><i class="dot y"></i><i class="dot g"></i><span>konrad@strachan — zsh — 90×30</span></div>
+    <div class="body">
+      <div class="top-grid">
+        <div class="top-left">
+          <h2>philosophy</h2>
+          <p>💡 Driven by insatiable curiosity and an appetite for solving complex real-world problems.</p>
+          <p>🚀 Iterate rapidly, fail fast, instrument everything. Build → measure → learn → repeat. The tightest loop wins.</p>
+          <p>⚖️ Successful systems require aligning incentives of participants, not just well architected software.</p>
+          <p>🧐 KISS principle advocate — condensing complex technical elements into <span class="hlc">clearly articulable forms</span>.</p>
+        </div>
+        <div class="top-right">
+          <img class="hero-img" src="img/konrad-pfp.png" alt="Konrad Strachan">
+        </div>
+      </div>
+
+      <h2>highlights</h2>
+      <div class="stats">
+        <div class="stat"><b class="sg">$2B+</b><span>volume handled on deployed systems</span></div>
+        <div class="stat"><b class="sc">2020</b><span>first production L2 rollup DEX using ZK</span></div>
+        <div class="stat"><b class="sa">2021</b><span>first blended CLOB + AMM markets on an L2</span></div>
+        <div class="stat"><b class="sm">20+</b><span>complete systems architectured and delivered to production</span></div>
+        <div class="stat"><b class="sg">zero</b><span>user funds lost, hacks and data breaches</span></div>
+      </div>
+
+      <h2>career</h2>
+      <div class="role-card">
+        <div class="role-head">
+          <h3>Anera Labs</h3>
+          <span class="role-pill">cofounder &amp; CTO · current</span>
+        </div>
+        <div class="init">
+          <h4>AI <span>April 2026 → ongoing</span></h4>
+          <div class="products">
+            <div class="product"><b>anera.exchange</b><span>One marketplace for AI inference — access multiple model providers with transparent pricing and unified billing. No vendor lock-in, full spend visibility.</span></div>
+            <div class="product"><b>anera.finance</b><span>Where capital meets compute — borrow against GPU capacity or lend into the AI buildout, with clear terms and decisions made by people, not black boxes.</span></div>
+            <div class="product"><b>anera.markets</b><span>Real-time indices that track the AI economy — compute prices, utilisation and performance benchmarks for investors, operators and researchers.</span></div>
+          </div>
+        </div>
+        <div class="init">
+          <h4>Liquid Sphere <span>Nov 2024 → Mar 2026</span></h4>
+          <p>Proprietary high-frequency market-making platform written in Rust, executing spot and perp strategies across CEXs (Binance, Bybit, Binance Futures, Kraken), DEXs and on-chain venues (Hyperliquid, Lighter).</p>
+          <p>Key innovations: a pluggable strategy framework (funding-rate arbitrage, grid PMM family, basis, TWAP, Avellaneda–Stoikov), a full control plane (frontend with audit changelogs), a 16-venue market-data ingestion service (<span class="hlc">Cerebrum</span>) for automated backtesting, and a high-performance strategy tracing system to reduce iteration time and make complex interactions between markets and strategies easily understandable.</p>
+          <p>Architected for HFT, deployed in colocated DCs around the world, using feed multiplexing and custom chain ingestion stacks to gain millisecond signal advantages.</p>
+        </div>
+        <div class="init">
+          <h4>Cross-chain intent filling <span>Feb 2024 → mid-2025</span></h4>
+          <p>A market-making/filling operation that fills user bridge orders on intent-based protocols (Nitro/Router, Across, Synapse, Bebop PMM) across a dozen+ EVM chains, earning the spread and protocol incentives. Started as a simple single-venue filler that evolved into <span class="hlc">Icarus</span> — a 20+ service fleet with per-protocol ingestion, pricing, refund tracking, inventory management, watchdogs and alerting.</p>
+        </div>
+        <div class="tags"><span>Rust</span><span>HFT</span><span>Low latency</span><span>Market making</span><span>Cross-chain</span><span>EVM</span><span>Intents</span><span>AI infrastructure</span><span>LLM research</span><span>LLM inference</span><span>Agentic</span><span>Node.js</span><span>Python</span><span>Architecture</span></div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-head">
+          <h3>Rhinofi <em>— formerly DeversiFi</em></h3>
+          <span class="role-pill">CTO · 2020 → 2023</span>
+        </div>
+        <p>Navigated several shifts within web3 across previous market cycles. Built the high-performance matching engine and execution infrastructure that processed <span class="hla">&gt;$1.5B USD in volume without issue</span> and powered the first production-ready Layer 2 rollup DEX back in 2020 — CEX-grade speed, liquidity and convenience with decentralisation, self-custody and trustlessness.</p>
+        <p>Liquidity was modular by design: custom modules proxied centralised liquidity onto local orderbooks with smart order routing, one source being the first AMM to blend price curves with dynamically quantised orderbook liquidity, while a purpose-built Layer 2 AMM engine delivered gas-free interactions against truly trustless pools of user-supplied liquidity.</p>
+        <p>Implemented trustless bridging from EVM and non-EVM chains.</p>
+        <div class="tags"><span>C++17</span><span>Matching engine</span><span>L2 rollups</span><span>ZK</span><span>AMM</span><span>Orderbooks</span><span>EVM</span><span>Low latency</span><span>Node.js</span><span>Python</span><span>Architecture</span></div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-head">
+          <h3>CryptoCompare</h3>
+          <span class="role-pill">Head of Data · 2017 → 2020</span>
+        </div>
+        <p>Managed the development and QA team, introduced engineering best practices and raised safety standards across teams. Acted as the interface between the business, external customers and development, and implemented incident-response policies with multi-tier support processes.</p>
+        <p>Architected and built low-latency market-data infrastructure for collecting and processing trade and orderbook data, plus a fault-tolerant contributions platform feeding Thomson Reuters (Refinitiv) via Elektron APIs. Built the mechanism letting data sources push directly to CryptoCompare instead of relying on collection-based infrastructure, with automatic outlier detection for aggregated market-data feeds.</p>
+        <div class="tags"><span>C++</span><span>Market data</span><span>EVM</span><span>Low latency</span><span>Node.js</span><span>Python</span><span>Architecture</span></div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-head">
+          <h3>TeamViewer</h3>
+          <span class="role-pill">Senior Software Developer · 2014 → 2017</span>
+        </div>
+        <p>Contributed to the remote-access client and server codebases including the TeamViewer Windows desktop client. Heavily involved in Windows service development for the ITbrain platform comprising AntiMalware and System Monitoring — implementing system and low-level hardware monitoring capabilities, and developing and helping secure the ITbrain Antivirus solution on the Bitdefender SDK. Extensive back-end service development with SQL and Cassandra, plus third-line customer support.</p>
+        <div class="tags"><span>C++</span><span>Windows</span><span>Cross platform</span><span>Cross architecture</span><span>Security</span><span>Monitoring</span><span>Low-level hardware integrations</span><span>Remote access</span><span>SQL</span><span>Cassandra</span></div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-head">
+          <h3>Thomson Reuters</h3>
+          <span class="role-pill">Software Engineer · 2008 → 2012</span>
+        </div>
+        <p>Built a real-time multi-vendor contribution system connecting market-data feeds from Reuters and Bloomberg systems alongside other providers into a single contribution pipeline. Built a high-performance in-memory caching layer that kept feed handlers reliable and persistent through failures. Contributed to the creation of the next generation of Reuters Market Data Systems — order routing, contributions and data collection.</p>
+        <div class="tags"><span>C++</span><span>Market data</span><span>Real-time</span><span>Low latency</span><span>Contributions</span><span>Order routing</span><span>In-memory caching</span></div>
+      </div>
+
+      <h2>selected open source / hackathon projects</h2>
+      <ul class="projects">
+        <li><a href="https://github.com/konradstrachan/ethcc24">Application layer preconfirmations</a> <span class="tag">🏆</span></li>
+        <li><a href="https://github.com/LVooooors/ETHGlobalLondon">Addressing LVR in AMM pools with Uniswap v4 Hooks</a> <span class="tag">🏆</span></li>
+        <li><a href="https://github.com/konradstrachan/shieldedevm">Communication between FHE shielded EVM and non-shielded EVM logic</a></li>
+        <li><a href="https://github.com/ETHPrague2024/PWNSolver">PWN intents — lending through intents</a> <span class="tag">🏆</span></li>
+        <li><a href="https://github.com/konradstrachan/ethistanbulhackathon2023">Intent-based bridging marketplace</a> <span class="tag">🏆</span></li>
+        <li><a href="https://github.com/konradstrachan/ethparishackathon23">Trustless event-driven EVM callbacks</a> <span class="tag">🏆</span></li>
+        <li><a href="https://github.com/konradstrachan/superhackhackathon23">Trustless web3 Twitter bots</a></li>
+        <li><a href="https://github.com/konradstrachan/ethpraguehackathon23">AI-guided contract auditing</a> <span class="tag">🏆</span></li>
+        <li><a href="https://github.com/konradstrachan/Pebble_ActivityWatchFace">ActivityFace Pebble watchface</a></li>
+        <li><a href="https://github.com/konradstrachan/MatchingEngine">MatchingEngine — C++17</a></li>
+        <li><a href="https://github.com/konradstrachan/workload_cpp">Lockless inter-thread orchestration</a></li>
+        <li><a href="https://github.com/konradstrachan/ethdamhackathon23">Trustless multi-token vesting</a> <span class="tag">🏆</span></li>
+        <li><a href="https://github.com/konradstrachan/ethlondonhackathon2023">Prediction market on Tezos</a> <span class="tag">🏆</span></li>
+        <li><a href="https://github.com/konradstrachan/devconnect2023aleohackathon">Algorithmic stablecoin for Aleo</a> <span class="tag">🏆</span></li>
+        <li><a href="https://github.com/konradstrachan/Pebble_HopperGame">Hopper isometric Pebble game</a></li>
+        <li><a href="https://github.com/konradstrachan/ConsoleExperiments">Console framebuffer experiments</a></li>
+      </ul>
+
+      <h2>contact</h2>
+      <div class="contact">
+        <a href="https://www.linkedin.com/in/konrad-strachan/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <footer>konradstrachan.github.io</footer>
+</div>
+</body>
+</html>
